@@ -5,7 +5,9 @@ go 1.22
 require (
 	github.com/IBM/sarama v1.43.2
 	github.com/ilyakaznacheev/cleanenv v1.5.0
+	github.com/joho/godotenv v1.5.1
 	github.com/nikoksr/notify v1.0.0
+	golang.org/x/time v0.5.0
 )
 
 require (
@@ -24,7 +26,6 @@ require (
 	github.com/jcmturner/gofork v1.7.6 // indirect
 	github.com/jcmturner/gokrb5/v8 v8.4.4 // indirect
 	github.com/jcmturner/rpc/v2 v2.0.3 // indirect
-	github.com/joho/godotenv v1.5.1 // indirect
 	github.com/klauspost/compress v1.17.8 // indirect
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/pierrec/lz4/v4 v4.1.21 // indirect

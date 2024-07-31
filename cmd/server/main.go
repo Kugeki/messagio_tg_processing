@@ -49,7 +49,7 @@ func main() {
 	saramaCfg.Version = sarama.V3_6_0_0
 
 	slogger.Info("creating tg sender")
-	tgSender, err := tg.New(slogger, cfg.Telegram.APIToken, []int64{cfg.Telegram.ChatID})
+	tgSender, err := tg.New(slogger, cfg.Telegram.APIToken, []int64{cfg.Telegram.ChatID}, cfg.Telegram.LimitPerSecond)
 	if err != nil {
 		slogger.Error("tg sender create", logger.Err(err))
 		return

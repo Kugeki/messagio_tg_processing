@@ -8,6 +8,8 @@ type Config struct {
 	Telegram struct {
 		APIToken string `env:"API_TOKEN" env-required:"true"`
 		ChatID   int64  `env:"CHAT_ID" env-required:"true"`
+
+		LimitPerSecond float64 `env:"LIMIT_PER_SECOND" env-required:"true"`
 	} `env-prefix:"TELEGRAM_"`
 
 	Kafka struct {
