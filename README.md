@@ -14,7 +14,7 @@
 
 ## Запуск
 ```
-docker compose -d --build
+docker compose up -d --build
 ```
 
 ## Пример конфигурации
